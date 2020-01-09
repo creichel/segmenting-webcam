@@ -92,7 +92,7 @@ test_dataset = dataset.Dataset(
 test_dataloader = dataset.Dataloder(test_dataset, batch_size=1, shuffle=False)
 
 # load best weights
-model.load_weights('best_model-multiclass.h5')
+model.load_weights('best_model.h5')
 
 scores = model.evaluate_generator(test_dataloader)
 
